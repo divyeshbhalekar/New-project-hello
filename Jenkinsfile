@@ -24,16 +24,16 @@ pipeline {
                 sh "mvn clean package"
             }
         }
-    /*   stage ("appln-deployed"){
+       stage ("appln-deployed"){
             steps{ 
                 sshagent(['55a8a4eb-bb93-4618-a4fb-c91fffeeccc9']) {
-            sh "scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/first-pipeline/webapp/target/webapp.war 
-            ec2-user@34.239.108.72:/home/ec2-user/apache-tomcat-9.0.58/webapps/"
+            sh "scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/demo/webapp/target/webapp.war 
+            ec2-user@3.86.160.237:/home/ec2-user/apache-tomcat-9.0.58/webapps/"
 
             }
 
             }
-        }*/
+        }
 
     }
 }
